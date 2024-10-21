@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ninja Project - About Us</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Grid layout for content */
+        .content {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        /* Responsive grid for larger screens */
+        @media(min-width: 768px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive image */
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fruit Ninja Project - About Us</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="content">
+            <div>
+                <h2>About Our Project</h2>
+                <p>Welcome to the Fruit Ninja Project! We are dedicated to creating an exciting and fun experience for players of all ages.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/600x400" alt="Fruit Ninja Image" class="responsive-img">
+            </div>
+        </section>
+
+        <section id="team" class="content">
+            <div>
+                <h2>Our Team</h2>
+                <p>Our talented team is passionate about gaming and development. Meet the people who make it happen!</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/600x400" alt="Team Image" class="responsive-img">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fruit Ninja Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
